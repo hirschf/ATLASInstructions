@@ -27,13 +27,11 @@ Login to your database
 
 This will prompt you with an output that looks something like this:
 
+>psql (9.6.1)
+>Type "help" for help.
+>
+>User=#
 
-```
-psql (9.6.1)
-Type "help" for help.
-
-User=#
-```
 From here, you can type: \l, \password, or \q to list your databases, change your password, and quit respectively
 
 # Step 3: Install Maven
