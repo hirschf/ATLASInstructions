@@ -28,6 +28,7 @@ Login to your database
 This will prompt you with an output that looks something like this:
 
 >psql (9.6.1)
+>
 >Type "help" for help.
 >
 >User=#
