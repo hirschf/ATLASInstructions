@@ -1,4 +1,5 @@
-# ATLAS Installation Instructions
+ATLAS Installation Instructions
+===============================
 Installation instructions for the open source tool ATLAS
 
 # Step 1: Install PostgreSQL using Homebrew
