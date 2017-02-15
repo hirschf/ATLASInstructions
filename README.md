@@ -31,7 +31,7 @@ Type "help" for help.
 user=#
 ```
 
-When you enter a query and press `return`, postgres will not execute the query until you have finished by adding a `;` at the end. Lets set up the admin user for our profile. Enter the following below:
+When you enter a query and press `return`, postgres will not execute the query until you have finished by adding a `;` at the end. Let's set up the admin user for our profile. Enter the following below:
 
 ```
 CREATE ROLE ohdsi_admin
@@ -49,12 +49,12 @@ To confirm that maven was successfully installed:
 
 `mvn -version`
 
-Once you have maven installed, you need to set the JAVA_HOME and CATALINA_HOME (we will need this for a future step) environment variable to point to the JDK. Do this by opening `~./bash_profile` in your favorite text editor. Once you're here, add:
+Once you have maven installed, you need to set the JAVA_HOME and CATALINA_HOME (we will need this for a future step) environment variables to point to the JDK. Do this by opening `~./bash_profile` in your favorite text editor. Once you're here, add:
 
 `export JAVA_HOME=$(/usr/libexec/java_home)`
-'export CATALINA_HOME=/opt/tomcat'
+`export CATALINA_HOME=/opt/tomcat`
 
-# Step 4: Clone the WebAPI project and make the War file
+# Step 4: Clone the WebAPI project and make the .war file
 
 For this next step, navigate to a directory you'd like your project to be placed and run:
 
@@ -85,13 +85,13 @@ Create a settings.xml in the WebAPI directory, and paste the following:
 </settings>
 ```
 
-Note: Your settings.xml may vary depending on the webapi schema you create. Keep in mind such as password and username when you make the schema in postgres.
+Note: Your settings.xml may vary depending on the webapi schema you created earlier. Keep this in mind when you set up your user and password. 
 
 Next, the .war file must be deployed in Tomcat. If you don't have Tomcat installed, go to the website and download the latest .tar.gz file. Once it's downloaded, run the following command in the folder you downloaded it to:
 
 `sudo tar xvf apache-tomcat-9.0.0.M17.tar.gz -C /opt/tomcat --strip-components=1`
 
-This will unpackage it, and place it in the /opt/tomcat folder. If this fails, try running:
+This will unpackage it, and place it in the /opt/tomcat folder. If this fails, try running this:
 
 `sudo mkdir /opt/tomcat` 
 
@@ -99,7 +99,7 @@ You will also need to give Tomcat the appropriate permissions:
 
 `sudo chmod -R g+r /opt/tomcat/`
 
-To launch Tomcat, enter your password following this command:
+Launch Tomcat using the following command:
 
 `sudo /opt/tomcat/bin/startup.sh`
 
