@@ -4,15 +4,15 @@ Installation instructions for the open source tool ATLAS. This installation is f
 
 ## Step 1: Install PostgreSQL using Homebrew
 
-Begin by making sure you have the latest version of Homebrew installed
+Begin by making sure you have the latest version of Homebrew installed:
 
 `brew update`
 
-Next, install PostgreSQL
+Next, install PostgreSQL:
 
 `brew install postgresql`
 
-Confirm PostgreSQL was successfully installed by checking the version
+Confirm PostgreSQL was successfully installed by checking the version:
 
 `postgres --help`
 
@@ -45,7 +45,7 @@ IS `Administration group for OHDSI applications`;
 
 `brew install maven`
 
-To confirm that maven was successfully installed
+To confirm that maven was successfully installed:
 
 `mvn -version`
 
@@ -56,7 +56,7 @@ Once you have maven installed, you need to set the JAVA_HOME and CATALINA_HOME (
 
 # Step 4: Clone the WebAPI project and make the War file
 
-For this next step, navigate to a directory you'd like your project to be placed and run
+For this next step, navigate to a directory you'd like your project to be placed and run:
 
 `git clone https://github.com/OHDSI/WebAPI.git`
 
@@ -103,7 +103,7 @@ To launch Tomcat, enter your password following this command:
 
 `sudo /opt/tomcat/bin/startup.sh`
 
-You should receive an output that has confirmed Tomcat has started.
+You should receive an output that has confirmed Tomcat has started
 
 ```
 Using CATALINA_BASE:   /opt/tomcat
