@@ -2,7 +2,7 @@ OHDSI-WebAPI Installation Instructions
 ===============================
 Installation instructions for the open source tool ATLAS. This installation is for macOS. Similar steps can be followed for Linux users. If you are using Linux, installation of PostgreSQL requires `apt-get` instead of `brew install`
 
-## Step 1: Install PostgreSQL using Homebrew
+## Step 1: Install PostgreSQL
 
 Begin by making sure you have the latest version of Homebrew installed:
 
