@@ -54,7 +54,7 @@ Once you have maven installed, you need to set the JAVA_HOME and CATALINA_HOME (
 `export JAVA_HOME=$(/usr/libexec/java_home)`
 `export CATALINA_HOME=/opt/tomcat`
 
-# Step 4: Clone the WebAPI project and make the .war file
+## Step 4: Clone the WebAPI project and make the .war file
 
 For this next step, navigate to a directory you'd like your project to be placed and run:
 
